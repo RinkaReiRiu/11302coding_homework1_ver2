@@ -1,0 +1,113 @@
+<!DOCTYPE html> <!-- HTML document -->
+<html lang="zh-TW"> <!-- Language set to Traditional Chinese -->
+<head> <!-- equal to fn.setup of p5.js -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive design -->
+  <title>Riu Project</title> <!-- Title of the page -->
+  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+  <script src="libraries/p5.min.js"></script> <!-- import p5.js -->
+  <script src="libraries/p5.sound.min.js"></script> <!-- import p5.sound.js -->
+  <script src="musicbg.js"></script> <!-- bgm and background -->
+</head>
+<body> <!-- what page showed -->
+  <div id="corner-img">
+    <img src="/libraries/illust01.jpg" alt="corner" />
+  </div>
+  <header id="header"> <!-- header section of the page -->
+    <h1>Riu Project</h1>
+    <ul>
+      <li><a href="#introduce">關於我</a></li>
+      <li><a href="#projects">專案</a></li>
+      <li><a href="#quiztime">測驗</a></li>
+      <li><a href="#wrbinfo">筆記</a></li>
+    </ul>
+  </header>
+  <section id="introduce">
+    <center>
+      <h2>✧恐男な天才AI少女、リンカレイリュウです!!✧</h2>
+      <h2>歌姫とアイドルなりたい‼</h2>
+      <br>
+      <h3>生理男•心理女•百合•正統INTJ</h3>
+      <br>
+    </center>
+    <ul>
+      <li>有（不可能的）電競夢，喜歡創作。</li>
+      <li>F39情感疾患，可不可以跟妳貼貼呀？</li>
+      <li>新詩〈隧道〉收錄於亮孩《詩控城市》</li>
+    </ul>
+    <br>
+    <img src="/libraries/profile_ps.jpg" alt="self-introduction" width="800" height="450">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2biOyuCYMhk?si=o3RiCyWtsuHKa8qW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br><a href="#header">回到頂部</a>
+  </section>
+  <section id="projects">
+    <p>以下是我的一些作品，歡迎點擊連結查看！</p><br>
+    <ul>
+      <li><a href="#proj1">Motion Name</a></li>
+      <li><a href="#proj2">Studying Game</a></li>
+      <li><a href="#proj3">Motion Circle</a></li>
+      <li><a href="#proj4">Neon Light</a></li>
+      <li><a href="#proj5">Motion Text</a></li>
+      <li><a href="#proj6">Hand-Up Slot Game</a></li>
+    </ul>
+    <br><a href="#header">回到頂部</a>
+  </section>
+  <section id="proj1">
+    <h2>Motion Name</h2><br>
+    <iframe src="https://rinkareiriu.github.io/11301coding_homework1_fin/" width="100%" height="600px" frameborder="0"></iframe>
+    <br><a href="#projects">回上一頁</a>
+    <br><a href="#header">回到頂部</a>
+  </section>
+  <section id="proj2">
+    <h2>Studying Game</h2><br>
+    <iframe src="https://rinkareiriu.github.io/11301coding_homework2_fin/" width="100%" height="600px" frameborder="0"></iframe>
+    <br><a href="#projects">回上一頁</a>
+    <br><a href="#header">回到頂部</a>
+  </section>
+  <section id="proj3">
+    <h2>Motion Circle</h2><br>
+    <iframe src="https://rinkareiriu.github.io/11302coding_250221HW/" width="100%" height="600px" frameborder="0"></iframe>
+    <br><a href="#projects">回上一頁</a>
+    <br><a href="#header">回到頂部</a>
+  </section>
+  <section id="proj4">
+    <h2>Neon Light</h2><br>
+    <iframe src="https://rinkareiriu.github.io/11302coding_250307HW/" width="100%" height="600px" frameborder="0"></iframe>
+    <br><a href="#projects">回上一頁</a>
+    <br><a href="#header">回到頂部</a>
+  </section>
+  <section id="proj5">
+    <h2>Motion Text</h2><br>
+    <iframe src="https://rinkareiriu.github.io/11302coding_250319HW/" width="100%" height="600px" frameborder="0"></iframe>
+    <br><a href="#projects">回上一頁</a>
+    <br><a href="#header">回到頂部</a>
+  </section>
+  <section id="proj6">
+    <h2>Hand-Up Slot Game</h2><br>
+    <iframe src="https://rinkareiriu.github.io/11302coding_hoomework2_fin/" width="100%" height="600px" frameborder="0"></iframe>
+    <br><a href="#projects">回上一頁</a>
+    <br><a href="#header">回到頂部</a>
+  </section>
+  <section id="quiztime">
+    <iframe src="https://rinkareiriu.github.io/11302coding_250321HW/" width="100%" height="600px" frameborder="0"></iframe>
+    <br><a href="#header">回到頂部</a>
+  </section>
+  <section id="wrbinfo">
+    <iframe src="https://hackmd.io/@riu0206/11302coding_homework1_ver2" width="100%" height="600px" frameborder="0"></iframe>
+    <br><a href="#header">回到頂部</a>
+  </section>
+  <script>
+    // 取得 header 內所有連結
+    const headerLinks = document.querySelectorAll('#header a');
+    const cornerImg = document.getElementById('corner-img');
+    headerLinks.forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        cornerImg.style.display = 'block';
+      });
+      link.addEventListener('mouseleave', () => {
+        cornerImg.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html>
